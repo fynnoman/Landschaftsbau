@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [flippedCard, setFlippedCard] = useState<number | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const projectDescriptions = [
     {
@@ -46,17 +47,68 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/98 backdrop-blur-md z-50 border-b border-[#1a4d2e]/10 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div className="text-2xl font-bold bg-gradient-to-r from-[#1a4d2e] to-[#4f9a6f] bg-clip-text text-transparent -ml-4 lg:-ml-8">
-              Garten- und Landschaftsbau Di Mulo Fabio
+          <div className="flex justify-between items-center h-16 md:h-20">
+            <div className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-[#1a4d2e] to-[#4f9a6f] bg-clip-text text-transparent -ml-2 sm:-ml-4 lg:-ml-8">
+              <span className="hidden sm:inline">Garten- und Landschaftsbau Di Mulo Fabio</span>
+              <span className="sm:hidden">Di Mulo Fabio</span>
             </div>
+            
+            {/* Desktop Menu */}
             <div className="hidden md:flex space-x-2">
               <a href="#home" className="px-6 py-2.5 text-[#1a4d2e] hover:bg-[#1a4d2e] hover:text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105">Home</a>
               <a href="#leistungen" className="px-6 py-2.5 text-[#1a4d2e] hover:bg-[#1a4d2e] hover:text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105">Leistungen</a>
               <a href="#galerie" className="px-6 py-2.5 text-[#1a4d2e] hover:bg-[#1a4d2e] hover:text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105">Galerie</a>
               <a href="#kontakt" className="px-6 py-2.5 bg-gradient-to-r from-[#1a4d2e] to-[#4f9a6f] text-white rounded-lg font-semibold shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">Kontakt</a>
             </div>
+
+            {/* Mobile Menu Button */}
+            <button 
+              className="md:hidden p-2 text-[#1a4d2e]"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {mobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
           </div>
+
+          {/* Mobile Menu */}
+          {mobileMenuOpen && (
+            <div className="md:hidden pb-4 space-y-2">
+              <a 
+                href="#home" 
+                className="block px-4 py-2 text-[#1a4d2e] hover:bg-[#1a4d2e] hover:text-white rounded-lg font-semibold transition-all"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Home
+              </a>
+              <a 
+                href="#leistungen" 
+                className="block px-4 py-2 text-[#1a4d2e] hover:bg-[#1a4d2e] hover:text-white rounded-lg font-semibold transition-all"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Leistungen
+              </a>
+              <a 
+                href="#galerie" 
+                className="block px-4 py-2 text-[#1a4d2e] hover:bg-[#1a4d2e] hover:text-white rounded-lg font-semibold transition-all"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Galerie
+              </a>
+              <a 
+                href="#kontakt" 
+                className="block px-4 py-2 bg-gradient-to-r from-[#1a4d2e] to-[#4f9a6f] text-white rounded-lg font-semibold shadow-md"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Kontakt
+              </a>
+            </div>
+          )}
         </div>
       </nav>
 
@@ -283,10 +335,10 @@ export default function Home() {
                   </div>
                   
                   {/* Back side - Green */}
-                  <div className="flip-card-back absolute inset-0 bg-[#1a4d2e] rounded-xl shadow-lg flex items-center justify-center p-6 overflow-y-auto">
+                  <div className="flip-card-back absolute inset-0 bg-[#1a4d2e] rounded-xl shadow-lg flex items-center justify-center p-4 md:p-6 overflow-y-auto">
                     <div className="text-center text-white">
-                      <h3 className="text-xl font-bold mb-3">{projectDescriptions[index].title}</h3>
-                      <p className="text-sm text-white/90 leading-relaxed">{projectDescriptions[index].text}</p>
+                      <h3 className="text-base md:text-xl font-bold mb-2 md:mb-3">{projectDescriptions[index].title}</h3>
+                      <p className="text-xs md:text-sm text-white/90 leading-relaxed">{projectDescriptions[index].text}</p>
                     </div>
                   </div>
                 </div>
