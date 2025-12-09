@@ -8,6 +8,44 @@
   --stone-grey: #6b7280;
 }
 
+/* Flip Card Styles */
+.perspective-container {
+  perspective: 1000px;
+  position: relative;
+  z-index: 1;
+}
+
+.perspective-container:has(.flip-card.flipped) {
+  z-index: 10000;
+}
+
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped {
+  transform: rotateY(180deg) scale(1.5);
+  z-index: 9999;
+  position: relative;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

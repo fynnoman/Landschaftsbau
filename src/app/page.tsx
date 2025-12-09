@@ -1,13 +1,53 @@
+'use client';
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [flippedCard, setFlippedCard] = useState<number | null>(null);
+
+  const projectDescriptions = [
+    {
+      title: "Holzpergola & moderner Sitzbereich",
+      text: "Hier haben wir für Familie Becker einen modernen Rückzugsort geschaffen. Die alte Terrasse war ungenutzt und ohne Struktur – heute lädt die neue Holzpergola in Kombination mit einer klaren Pflastergestaltung zum Entspannen ein. Wir haben dafür robuste Douglasie verbaut und die Beete mit pflegeleichten Stauden ergänzt, sodass der Bereich das ganze Jahr über attraktiv bleibt."
+    },
+    {
+      title: "Hangbefestigung & Staudenbepflanzung",
+      text: "Bei diesem Projekt haben wir einen schwierigen Hang in einen funktionalen und zugleich ästhetischen Gartenbereich verwandelt. Durch eine Natursteinmauer und neue Drainage konnten wir den Hang sichern. Anschließend haben wir eine abgestufte Staudenbepflanzung gesetzt, die nicht nur schön aussieht, sondern auch Erosion verhindert."
+    },
+    {
+      title: "Fundamentarbeiten für ein Gartenprojekt",
+      text: "Für Familie Schmitt durften wir die Grundarbeiten für ihr neues Gartenhaus übernehmen. Dazu gehörte das Ausheben, Verdichten und fachgerechte Setzen der Bodenplatte. Präzision ist hier entscheidend – eine saubere Grundlage sorgt dafür, dass alles, was darauf folgt, viele Jahre stabil bleibt."
+    },
+    {
+      title: "Großflächenmodellierung & moderne Gartenanlage",
+      text: "Dieses Grundstück haben wir komplett neu modelliert. Aus einer unebenen, schwer nutzbaren Fläche ist ein hochwertiger, pflegeleichter Garten entstanden. Wir haben Terrassen angelegt, verschiedene Höhen ausgeglichen und mit Zierkies, Formgehölzen und Rollrasen ein harmonisches Gesamtbild geschaffen."
+    },
+    {
+      title: "Hochwertige Mauer- & Pflanzgestaltung",
+      text: "Hier wünschte sich der Kunde eine klare Struktur im Außenbereich. Wir haben eine elegante Blocksteinmauer gesetzt, die nicht nur optisch wirkt, sondern auch das Gelände abfängt. Dazu wurde eine kontrastreiche Bepflanzung aus Gräsern und roten Straucharten gewählt – modern, langlebig und sehr pflegeleicht."
+    },
+    {
+      title: "Vorgarten mit Formschnitt & Blütenfarben",
+      text: "Diesen Vorgarten haben wir komplett überarbeitet. Ziel war ein einladender, aber gleichzeitig pflegearmer Eingangsbereich. Wir kombinierten Formschnittgehölze mit blühenden Stauden und einer klar definierten Beetkante. Der Kunde freut sich besonders über die ganzjährige Struktur dank immergrüner Pflanzen."
+    }
+  ];
+
+  const handleImageClick = (index: number) => {
+    if (flippedCard === index) {
+      setFlippedCard(null);
+    } else {
+      setFlippedCard(index);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/98 backdrop-blur-md z-50 border-b border-[#1a4d2e]/10 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <div className="text-2xl font-bold bg-gradient-to-r from-[#1a4d2e] to-[#4f9a6f] bg-clip-text text-transparent">
+            <div className="text-2xl font-bold bg-gradient-to-r from-[#1a4d2e] to-[#4f9a6f] bg-clip-text text-transparent -ml-4 lg:-ml-8">
               Garten- und Landschaftsbau Di Mulo Fabio
             </div>
             <div className="hidden md:flex space-x-2">
@@ -23,7 +63,7 @@ export default function Home() {
       {/* Fixed Background Image for entire page */}
       <div className="fixed inset-0 z-0">
         <Image
-          src="/hero2.jpeg"
+          src="/garden.jpeg"
           alt="Garten- und Landschaftsbau"
           fill
           className="object-cover"
@@ -31,7 +71,7 @@ export default function Home() {
           priority
         />
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/15"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       {/* Hero Section */}
@@ -73,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="pt-12 pb-0 backdrop-blur-sm relative z-10">
+      <section className="py-12 backdrop-blur-sm relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
             <div>
@@ -98,21 +138,21 @@ export default function Home() {
               </div>
             </div>
             <div className="relative h-96 lg:h-[500px] rounded-xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1a4d2e] to-[#4f9a6f] flex items-center justify-center">
-                <div className="text-white/30 text-center">
-                  <svg className="w-24 h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                  <p className="text-lg">Platzhalter für Bild</p>
-                </div>
-              </div>
+              <Image
+                src="/E1A77885-3015-488E-A863-7F08D039D190.jpeg"
+                alt="Garten- und Landschaftsbau Projekt"
+                fill
+                className="object-cover"
+                style={{ objectPosition: 'center 40%' }}
+                quality={95}
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section id="leistungen" className="pt-0 pb-12 relative z-10">
+      <section id="leistungen" className="pt-32 pb-12 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">Unsere Leistungen</h2>
@@ -123,7 +163,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service Card 1 */}
-            <div className="bg-white/50 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
               <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -136,7 +176,7 @@ export default function Home() {
             </div>
 
             {/* Service Card 2 */}
-            <div className="bg-white/50 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
               <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -149,7 +189,7 @@ export default function Home() {
             </div>
 
             {/* Service Card 3 */}
-            <div className="bg-white/50 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
               <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
@@ -162,7 +202,7 @@ export default function Home() {
             </div>
 
             {/* Service Card 4 */}
-            <div className="bg-white/50 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
               <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
@@ -175,7 +215,7 @@ export default function Home() {
             </div>
 
             {/* Service Card 5 */}
-            <div className="bg-white/50 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
               <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -188,7 +228,7 @@ export default function Home() {
             </div>
 
             {/* Service Card 6 */}
-            <div className="bg-white/50 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
               <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -205,28 +245,50 @@ export default function Home() {
 
       {/* Gallery Section */}
       <section id="galerie" className="py-8 relative z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">Unsere Projekte</h2>
-            <p className="text-lg text-white max-w-2xl mx-auto drop-shadow-lg">
+            <p className="text-lg text-white max-w-2xl mx-auto drop-shadow-lg mb-4">
               Ein Einblick in unsere abgeschlossenen Projekte und Arbeiten
             </p>
+            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
+              <svg className="w-5 h-5 text-white animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+              </svg>
+              <span className="text-white font-medium text-sm">Klicken Sie auf die Bilder für mehr Details</span>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Gallery placeholders */}
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div key={item} className="relative group overflow-hidden rounded-xl shadow-lg aspect-square bg-gradient-to-br from-[#1a4d2e] to-[#4f9a6f]">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-white/50 text-center">
-                    <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <p className="text-sm">Projekt {item}</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {/* Gallery images */}
+            {['image1.jpeg', 'image2.jpeg', 'image3.jpeg', 'image4.jpeg', 'image5.jpeg', 'image6.jpeg'].map((image, index) => (
+              <div 
+                key={index} 
+                className="perspective-container aspect-square cursor-pointer"
+                onClick={() => handleImageClick(index)}
+              >
+                <div className={`flip-card ${flippedCard === index ? 'flipped' : ''}`}>
+                  {/* Front side - Image */}
+                  <div className="flip-card-front relative w-full h-full rounded-xl shadow-lg overflow-hidden group">
+                    <Image
+                      src={`/${image}`}
+                      alt={`Projekt ${index + 1}`}
+                      fill
+                      className="object-cover"
+                      quality={90}
+                    />
+                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <span className="text-white font-semibold">Klicken zum Drehen</span>
+                    </div>
                   </div>
-                </div>
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="text-white font-semibold">Projektdetails ansehen</span>
+                  
+                  {/* Back side - Green */}
+                  <div className="flip-card-back absolute inset-0 bg-[#1a4d2e] rounded-xl shadow-lg flex items-center justify-center p-6 overflow-y-auto">
+                    <div className="text-center text-white">
+                      <h3 className="text-xl font-bold mb-3">{projectDescriptions[index].title}</h3>
+                      <p className="text-sm text-white/90 leading-relaxed">{projectDescriptions[index].text}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -286,7 +348,7 @@ export default function Home() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-[#4f9a6f] text-white rounded-lg font-semibold hover:bg-[#5fb080] transition-colors"
+                  className="w-full px-6 py-3 bg-[#1a4d2e] text-white rounded-lg font-semibold hover:bg-[#2a6d4e] transition-colors"
                 >
                   Nachricht senden
                 </button>
@@ -299,8 +361,8 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold mb-6 text-white">Kontaktinformationen</h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-[#4f9a6f] rounded-lg flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-10 h-10 bg-[#1a4d2e] rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
@@ -312,8 +374,8 @@ export default function Home() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-[#4f9a6f] rounded-lg flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-10 h-10 bg-[#1a4d2e] rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                     </div>
@@ -324,8 +386,8 @@ export default function Home() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-[#4f9a6f] rounded-lg flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-10 h-10 bg-[#1a4d2e] rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     </div>
@@ -336,8 +398,8 @@ export default function Home() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-[#4f9a6f] rounded-lg flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-10 h-10 bg-[#1a4d2e] rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
@@ -361,7 +423,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#6b7280] text-white py-16 relative z-10">
+      <footer className="bg-[#1a4d2e] text-white py-16 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             {/* Company Info */}
@@ -413,7 +475,7 @@ export default function Home() {
                 &copy; 2025 Garten- und Landschaftsbau Di Mulo Fabio. Alle Rechte vorbehalten.
               </p>
               <p className="text-white/70 text-sm">
-                Designed with <span className="text-[#4f9a6f]">♥</span> in Deutschland
+                Gestaltet mit <span className="text-[#4f9a6f]">♥</span> in Deutschland
               </p>
             </div>
           </div>
