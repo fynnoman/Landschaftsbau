@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Garten- und Landschaftsbau Di Mulo Fabio
 
-## Getting Started
+Eine moderne, responsive Website für das Landschaftsbau-Unternehmen "Garten- und Landschaftsbau Di Mulo Fabio".
 
-First, run the development server:
+## 🌿 Über das Projekt
+
+Diese Website wurde mit Next.js 15, TypeScript und Tailwind CSS entwickelt und präsentiert die Dienstleistungen und Projekte des Landschaftsbau-Unternehmens in einem modernen, aber erdigen Design.
+
+### Farbpalette
+- **Dunkelgrün** (#1a4d2e): Primärfarbe
+- **Hellgrün** (#4f9a6f): Sekundärfarbe  
+- **Steingrau** (#6b7280): Neutralfarbe
+- **Weiß** (#ffffff): Hintergrund
+
+## 🚀 Erste Schritte
+
+### Voraussetzungen
+- Node.js 18.17 oder höher
+- npm, yarn, pnpm oder bun
+
+### Installation
+
+1. Entwicklungsserver starten:
 
 ```bash
 npm run dev
-# or
+# oder
 yarn dev
-# or
+# oder
 pnpm dev
-# or
+# oder
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Öffnen Sie [http://localhost:3000](http://localhost:3000) in Ihrem Browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Projektstruktur
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+landschaftsbaudefabio/
+├── src/
+│   └── app/
+│       ├── globals.css      # Globale Styles mit Custom Properties
+│       ├── layout.tsx        # Root Layout (Deutsch)
+│       └── page.tsx          # Hauptseite mit allen Sektionen
+├── public/                   # Statische Assets
+├── .github/
+│   └── copilot-instructions.md  # Copilot-Anweisungen
+└── README.md
+```
 
-## Learn More
+## 📄 Seiten-Sektionen
 
-To learn more about Next.js, take a look at the following resources:
+- **Hero**: Einladender Bereich mit Firmennamen und Call-to-Actions
+- **Leistungen**: 6 Service-Karten (Gartengestaltung, Pflasterarbeiten, Baumpflege, etc.)
+- **Galerie**: Projektübersicht mit 6 Platzhaltern für Bilder
+- **Kontakt**: Kontaktformular und Unternehmensinformationen
+- **Footer**: Links und rechtliche Informationen
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design-Prinzipien
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Modern und clean, aber nicht zu fancy
+- Passend zur Natur des Landschaftsbaus
+- Voll responsive (Mobile-First)
+- Sanfte Animationen und Hover-Effekte
+- Klare Typografie mit Geist-Schriftarten
 
-## Deploy on Vercel
+## 🛠️ Technologie-Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Framework**: Next.js 15 mit App Router
+- **Sprache**: TypeScript
+- **Styling**: Tailwind CSS
+- **Schriftarten**: Geist & Geist Mono
+- **Icons**: Heroicons (SVG)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 Nächste Schritte
+
+1. **Bilder hinzufügen**: Ersetzen Sie die Platzhalter in der Galerie-Sektion mit echten Projekt-Fotos
+2. **Kontaktformular verbinden**: Backend-Integration für das Kontaktformular
+3. **SEO optimieren**: Meta-Tags und strukturierte Daten hinzufügen
+4. **Google Maps**: Standort-Karte in der Kontakt-Sektion einbinden
+5. **Impressum & Datenschutz**: Rechtliche Seiten erstellen
+
+## 🚀 Deployment
+
+Die Website kann einfach auf verschiedenen Plattformen deployed werden:
+
+### Vercel (empfohlen)
+```bash
+npm run build
+# Projekt mit Vercel verbinden
+```
+
+### Andere Plattformen
+- Netlify
+- AWS Amplify
+- Docker Container
+
+## 📚 Weitere Ressourcen
+
+- [Next.js Dokumentation](https://nextjs.org/docs)
+- [Tailwind CSS Dokumentation](https://tailwindcss.com/docs)
+- [TypeScript Dokumentation](https://www.typescriptlang.org/docs)
+
+## 📄 Lizenz
+
+© 2025 Garten- und Landschaftsbau Di Mulo Fabio. Alle Rechte vorbehalten.
