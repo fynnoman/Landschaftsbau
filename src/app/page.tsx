@@ -296,14 +296,14 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section id="galerie" className="py-8 relative z-10">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+      <section id="galerie" className="py-16 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">Unsere Projekte</h2>
-            <p className="text-lg text-white max-w-2xl mx-auto drop-shadow-lg mb-4">
+            <p className="text-lg text-white max-w-2xl mx-auto drop-shadow-lg mb-6">
               Ein Einblick in unsere abgeschlossenen Projekte und Arbeiten
             </p>
-            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
+            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-5 py-3 rounded-full shadow-lg">
               <svg className="w-5 h-5 text-white animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
               </svg>
@@ -311,7 +311,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Gallery images */}
             {['image1.jpeg', 'image2.jpeg', 'image3.jpeg', 'image4.jpeg', 'image5.jpeg', 'image6.jpeg'].map((image, index) => (
               <div 
@@ -321,24 +321,42 @@ export default function Home() {
               >
                 <div className={`flip-card ${flippedCard === index ? 'flipped' : ''}`}>
                   {/* Front side - Image */}
-                  <div className="flip-card-front relative w-full h-full rounded-xl shadow-lg overflow-hidden group">
+                  <div className="flip-card-front relative w-full h-full rounded-2xl shadow-2xl overflow-hidden group border-4 border-white/20">
                     <Image
                       src={`/${image}`}
                       alt={`Projekt ${index + 1}`}
                       fill
-                      className="object-cover"
-                      quality={90}
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      quality={95}
                     />
-                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                      <span className="text-white font-semibold">Klicken zum Drehen</span>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-end pb-6">
+                      <svg className="w-8 h-8 text-white mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                      </svg>
+                      <span className="text-white font-semibold text-lg">Details ansehen</span>
                     </div>
                   </div>
                   
                   {/* Back side - Green */}
-                  <div className="flip-card-back absolute inset-0 bg-[#1a4d2e] rounded-xl shadow-lg flex items-center justify-center p-4 md:p-6 overflow-y-auto">
-                    <div className="text-center text-white">
-                      <h3 className="text-base md:text-xl font-bold mb-2 md:mb-3">{projectDescriptions[index].title}</h3>
-                      <p className="text-xs md:text-sm text-white/90 leading-relaxed">{projectDescriptions[index].text}</p>
+                  <div className="flip-card-back absolute inset-0 bg-gradient-to-br from-[#1a4d2e] to-[#2a5d3e] rounded-2xl shadow-2xl flex items-start justify-start p-6 overflow-y-auto border-4 border-[#4f9a6f]">
+                    <div className="text-left text-white w-full">
+                      <div className="flex items-center justify-between mb-4">
+                        <h3 className="text-xl md:text-2xl font-bold">{projectDescriptions[index].title}</h3>
+                        <button 
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleImageClick(index);
+                          }}
+                          className="text-white hover:text-[#4f9a6f] transition-colors"
+                        >
+                          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                        </button>
+                      </div>
+                      <div className="h-px bg-[#4f9a6f] mb-4"></div>
+                      <p className="text-sm md:text-base text-white/95 leading-relaxed">{projectDescriptions[index].text}</p>
                     </div>
                   </div>
                 </div>
