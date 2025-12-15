@@ -115,8 +115,8 @@ export default function Home() {
       {/* Fixed Background Image for entire page */}
       <div className="fixed inset-0 z-0">
         <Image
-          src="/garden.jpeg"
-          alt="Garten- und Landschaftsbau"
+          src="/hintergrund.png"
+          alt="Der Ruppi macht's Hintergrund"
           fill
           className="object-cover"
           style={{ objectPosition: '60% 70%' }}
