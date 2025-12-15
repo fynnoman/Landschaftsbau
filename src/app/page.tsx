@@ -115,7 +115,7 @@ export default function Home() {
       {/* Fixed Background Image for entire page */}
       <div className="fixed inset-0 z-0">
         <Image
-          src="/hintergrund.png"
+          src="/hhin.jpeg"
           alt="Der Ruppi macht's Hintergrund"
           fill
           className="object-cover"
