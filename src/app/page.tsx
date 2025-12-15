@@ -48,17 +48,17 @@ export default function Home() {
       <nav className="fixed top-0 w-full bg-white/98 backdrop-blur-md z-50 border-b border-[#1a4d2e]/10 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 md:h-20">
-            <div className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-[#1a4d2e] to-[#4f9a6f] bg-clip-text text-transparent -ml-2 sm:-ml-4 lg:-ml-8">
+            <div className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-[#d97706] to-[#f59e0b] bg-clip-text text-transparent -ml-2 sm:-ml-4 lg:-ml-8">
               <span className="hidden sm:inline">Der Ruppi macht's</span>
               <span className="sm:hidden">Der Ruppi macht's</span>
             </div>
             
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-2">
-              <a href="#home" className="px-6 py-2.5 text-[#1a4d2e] hover:bg-[#1a4d2e] hover:text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105">Home</a>
-              <a href="#leistungen" className="px-6 py-2.5 text-[#1a4d2e] hover:bg-[#1a4d2e] hover:text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105">Leistungen</a>
-              <a href="#galerie" className="px-6 py-2.5 text-[#1a4d2e] hover:bg-[#1a4d2e] hover:text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105">Galerie</a>
-              <a href="#kontakt" className="px-6 py-2.5 bg-gradient-to-r from-[#1a4d2e] to-[#4f9a6f] text-white rounded-lg font-semibold shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">Kontakt</a>
+              <a href="#home" className="px-6 py-2.5 text-[#d97706] hover:bg-[#d97706] hover:text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105">Home</a>
+              <a href="#leistungen" className="px-6 py-2.5 text-[#d97706] hover:bg-[#d97706] hover:text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105">Leistungen</a>
+              <a href="#galerie" className="px-6 py-2.5 text-[#d97706] hover:bg-[#d97706] hover:text-white rounded-lg font-semibold transition-all duration-300 hover:scale-105">Galerie</a>
+              <a href="#kontakt" className="px-6 py-2.5 bg-gradient-to-r from-[#d97706] to-[#f59e0b] text-white rounded-lg font-semibold shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105">Kontakt</a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -81,28 +81,28 @@ export default function Home() {
             <div className="md:hidden pb-4 space-y-2">
               <a 
                 href="#home" 
-                className="block px-4 py-2 text-[#1a4d2e] hover:bg-[#1a4d2e] hover:text-white rounded-lg font-semibold transition-all"
+                className="block px-4 py-2 text-[#d97706] hover:bg-[#d97706] hover:text-white rounded-lg font-semibold transition-all"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Home
               </a>
               <a 
                 href="#leistungen" 
-                className="block px-4 py-2 text-[#1a4d2e] hover:bg-[#1a4d2e] hover:text-white rounded-lg font-semibold transition-all"
+                className="block px-4 py-2 text-[#d97706] hover:bg-[#d97706] hover:text-white rounded-lg font-semibold transition-all"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Leistungen
               </a>
               <a 
                 href="#galerie" 
-                className="block px-4 py-2 text-[#1a4d2e] hover:bg-[#1a4d2e] hover:text-white rounded-lg font-semibold transition-all"
+                className="block px-4 py-2 text-[#d97706] hover:bg-[#d97706] hover:text-white rounded-lg font-semibold transition-all"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Galerie
               </a>
               <a 
                 href="#kontakt" 
-                className="block px-4 py-2 bg-gradient-to-r from-[#1a4d2e] to-[#4f9a6f] text-white rounded-lg font-semibold shadow-md"
+                className="block px-4 py-2 bg-gradient-to-r from-[#d97706] to-[#f59e0b] text-white rounded-lg font-semibold shadow-md"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Kontakt
@@ -132,7 +132,7 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white drop-shadow-2xl">
-            <span className="bg-gradient-to-r from-[#1a4d2e] to-[#4f9a6f] bg-clip-text text-transparent">Der Ruppi macht's</span>
+            <span className="bg-gradient-to-r from-[#d97706] to-[#f59e0b] bg-clip-text text-transparent">Der Ruppi macht's</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-white/95 drop-shadow-lg">
             Ihr zuverlässiger Partner für Entrümpelungen und Entsorgung in Saarbrücken
@@ -140,13 +140,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="#kontakt" 
-              className="px-8 py-4 bg-white text-[#1a4d2e] rounded-lg font-semibold hover:bg-[#c8e6c9] transition-all transform hover:scale-105 shadow-lg"
+              className="px-8 py-4 bg-white text-[#d97706] rounded-lg font-semibold hover:bg-[#fef3c7] transition-all transform hover:scale-105 shadow-lg"
             >
               Jetzt Kontakt aufnehmen
             </a>
             <a 
               href="#leistungen" 
-              className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-[#1a4d2e] transition-all"
+              className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-[#d97706] transition-all"
             >
               Unsere Leistungen
             </a>
@@ -168,7 +168,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-[#1a4d2e] mb-6">Über uns</h2>
+              <h2 className="text-4xl font-bold text-[#d97706] mb-6">Über uns</h2>
               <p className="text-lg text-white mb-6">
                 Der Ruppi macht's ist Ihr professionelles Entsorgungsunternehmen in Saarbrücken und Umgebung. 
                 Wir sind spezialisiert auf Entrümpelungen jeder Art, Haushaltsauflösungen und Entsorgungsdienstleistungen.
@@ -179,11 +179,11 @@ export default function Home() {
               </p>
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="text-center p-6 bg-white/80 rounded-xl">
-                  <div className="text-4xl font-bold text-[#1a4d2e] mb-2">5.0</div>
+                  <div className="text-4xl font-bold text-[#d97706] mb-2">5.0</div>
                   <div className="text-stone-grey">Google Bewertung</div>
                 </div>
                 <div className="text-center p-6 bg-white/80 rounded-xl">
-                  <div className="text-4xl font-bold text-[#1a4d2e] mb-2">21</div>
+                  <div className="text-4xl font-bold text-[#d97706] mb-2">21</div>
                   <div className="text-stone-grey">Rezensionen</div>
                 </div>
               </div>
@@ -214,78 +214,78 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service Card 1 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
-              <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#f59e0b]">
+              <div className="w-12 h-12 bg-[#d97706] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Entrümpelungen</h3>
+              <h3 className="text-xl font-semibold text-[#d97706] mb-3">Entrümpelungen</h3>
               <p className="text-[#6b7280]">
                 Wohnungs-, Haus-, Keller- und Dachbodenentrümpelungen – schnell, sauber und zuverlässig.
               </p>
             </div>
 
             {/* Service Card 2 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
-              <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#f59e0b]">
+              <div className="w-12 h-12 bg-[#d97706] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Haushaltsauflösungen</h3>
+              <h3 className="text-xl font-semibold text-[#d97706] mb-3">Haushaltsauflösungen</h3>
               <p className="text-[#6b7280]">
                 Professionelle und diskrete Auflösung kompletter Haushalte mit fachgerechter Entsorgung.
               </p>
             </div>
 
             {/* Service Card 3 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
-              <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#f59e0b]">
+              <div className="w-12 h-12 bg-[#d97706] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Betriebs- & Firmenauflösungen</h3>
+              <h3 className="text-xl font-semibold text-[#d97706] mb-3">Betriebs- & Firmenauflösungen</h3>
               <p className="text-[#6b7280]">
                 Kompetente Abwicklung von Betriebs- und Firmenauflösungen aller Art.
               </p>
             </div>
 
             {/* Service Card 4 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
-              <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#f59e0b]">
+              <div className="w-12 h-12 bg-[#d97706] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Umzüge</h3>
+              <h3 className="text-xl font-semibold text-[#d97706] mb-3">Umzüge</h3>
               <p className="text-[#6b7280]">
                 Zuverlässige Umzugsdienstleistungen mit professionellem Team für einen stressfreien Umzug.
               </p>
             </div>
 
             {/* Service Card 5 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
-              <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#f59e0b]">
+              <div className="w-12 h-12 bg-[#d97706] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Transportvermietung</h3>
+              <h3 className="text-xl font-semibold text-[#d97706] mb-3">Transportvermietung</h3>
               <p className="text-[#6b7280]">
                 Transportvermietung mit erfahrenem Fahrer für alle Ihre Transportbedürfnisse.
               </p>
             </div>
 
             {/* Service Card 6 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
-              <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#f59e0b]">
+              <div className="w-12 h-12 bg-[#d97706] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Gebäudereinigung & Gartenarbeiten</h3>
+              <h3 className="text-xl font-semibold text-[#d97706] mb-3">Gebäudereinigung & Gartenarbeiten</h3>
               <p className="text-[#6b7280]">
                 Professionelle Gebäudereinigung und Gartenarbeiten für ein gepflegtes Umfeld.
               </p>
@@ -337,8 +337,8 @@ export default function Home() {
                     </div>
                   </div>
                   
-                  {/* Back side - Green */}
-                  <div className="flip-card-back absolute inset-0 bg-gradient-to-br from-[#1a4d2e] to-[#2a5d3e] rounded-2xl shadow-2xl flex items-start justify-start p-6 overflow-y-auto border-4 border-[#4f9a6f]">
+                  {/* Back side - Orange */}
+                  <div className="flip-card-back absolute inset-0 bg-gradient-to-br from-[#d97706] to-[#ea580c] rounded-2xl shadow-2xl flex items-start justify-start p-6 overflow-y-auto border-4 border-[#f59e0b]">
                     <div className="text-left text-white w-full">
                       <div className="flex items-center justify-between mb-4">
                         <h3 className="text-xl md:text-2xl font-bold">{projectDescriptions[index].title}</h3>
@@ -347,14 +347,14 @@ export default function Home() {
                             e.stopPropagation();
                             handleImageClick(index);
                           }}
-                          className="text-white hover:text-[#4f9a6f] transition-colors"
+                          className="text-white hover:text-[#fef3c7] transition-colors"
                         >
                           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                           </svg>
                         </button>
                       </div>
-                      <div className="h-px bg-[#4f9a6f] mb-4"></div>
+                      <div className="h-px bg-[#fbbf24] mb-4"></div>
                       <p className="text-sm md:text-base text-white/95 leading-relaxed">{projectDescriptions[index].text}</p>
                     </div>
                   </div>
@@ -398,8 +398,8 @@ export default function Home() {
               <p className="text-[#6b7280] mb-4 italic">
                 "Wir haben unseren Umzug in eine neue Wohnung sowie die Entrümpelung des vorherigen Hauses machen lassen. Sehr nette und zuvorkommende Mitarbeiter arbeiten mit ihrem ebenfalls sehr freundlichen und hilfsbereiten Chef Hand in Hand. Alle Termine wurden pünktlichst eingehalten. Dringende Weiterempfehlung! 👍👍👍"
               </p>
-              <div className="border-t border-[#1a4d2e]/20 pt-4">
-                <p className="font-semibold text-[#1a4d2e]">Ellen Müller</p>
+              <div className="border-t border-[#d97706]/20 pt-4">
+                <p className="font-semibold text-[#d97706]">Ellen Müller</p>
                 <p className="text-sm text-[#6b7280]">vor einem Monat</p>
               </div>
             </div>
@@ -416,8 +416,8 @@ export default function Home() {
               <p className="text-[#6b7280] mb-4 italic">
                 "Wir haben die Firma engagiert um unseren Keller zu entrümpeln. Der Chef persönlich sowie seine Kollegen waren sehr kompetent und der Auftrag wurde schnell erledigt. Sehr höfliche und freundliche Firma. TOP!"
               </p>
-              <div className="border-t border-[#1a4d2e]/20 pt-4">
-                <p className="font-semibold text-[#1a4d2e]">Julia Stegen</p>
+              <div className="border-t border-[#d97706]/20 pt-4">
+                <p className="font-semibold text-[#d97706]">Julia Stegen</p>
                 <p className="text-sm text-[#6b7280]">vor 5 Monaten</p>
               </div>
             </div>
@@ -434,8 +434,8 @@ export default function Home() {
               <p className="text-[#6b7280] mb-4 italic">
                 "Super diskret. Super schnelle Abwicklung. Und sehr sehr gute und saubere Arbeit, zu mehr als fairen Preisen. Alles in allem kann ich das Unternehmen nur weiterempfehlen."
               </p>
-              <div className="border-t border-[#1a4d2e]/20 pt-4">
-                <p className="font-semibold text-[#1a4d2e]">Reiner Wahnsinn</p>
+              <div className="border-t border-[#d97706]/20 pt-4">
+                <p className="font-semibold text-[#d97706]">Reiner Wahnsinn</p>
                 <p className="text-sm text-[#6b7280]">Local Guide · vor 5 Monaten</p>
               </div>
             </div>
@@ -458,44 +458,44 @@ export default function Home() {
             <div className="bg-white/30 backdrop-blur-sm rounded-xl p-8">
               <form className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-[#1a4d2e]">Name</label>
+                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-[#d97706]">Name</label>
                   <input
                     type="text"
                     id="name"
-                    className="w-full px-4 py-3 rounded-lg bg-white/50 border border-[#1a4d2e]/20 text-[#1a4d2e] placeholder-[#1a4d2e]/50 focus:outline-none focus:ring-2 focus:ring-[#4f9a6f]"
+                    className="w-full px-4 py-3 rounded-lg bg-white/50 border border-[#d97706]/20 text-[#d97706] placeholder-[#d97706]/50 focus:outline-none focus:ring-2 focus:ring-[#f59e0b]"
                     placeholder="Ihr Name"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2 text-[#1a4d2e]">E-Mail</label>
+                  <label htmlFor="email" className="block text-sm font-medium mb-2 text-[#d97706]">E-Mail</label>
                   <input
                     type="email"
                     id="email"
-                    className="w-full px-4 py-3 rounded-lg bg-white/50 border border-[#1a4d2e]/20 text-[#1a4d2e] placeholder-[#1a4d2e]/50 focus:outline-none focus:ring-2 focus:ring-[#4f9a6f]"
+                    className="w-full px-4 py-3 rounded-lg bg-white/50 border border-[#d97706]/20 text-[#d97706] placeholder-[#d97706]/50 focus:outline-none focus:ring-2 focus:ring-[#f59e0b]"
                     placeholder="ihre@email.de"
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-2 text-[#1a4d2e]">Telefon</label>
+                  <label htmlFor="phone" className="block text-sm font-medium mb-2 text-[#d97706]">Telefon</label>
                   <input
                     type="tel"
                     id="phone"
-                    className="w-full px-4 py-3 rounded-lg bg-white/50 border border-[#1a4d2e]/20 text-[#1a4d2e] placeholder-[#1a4d2e]/50 focus:outline-none focus:ring-2 focus:ring-[#4f9a6f]"
+                    className="w-full px-4 py-3 rounded-lg bg-white/50 border border-[#d97706]/20 text-[#d97706] placeholder-[#d97706]/50 focus:outline-none focus:ring-2 focus:ring-[#f59e0b]"
                     placeholder="Ihre Telefonnummer"
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2 text-[#1a4d2e]">Nachricht</label>
+                  <label htmlFor="message" className="block text-sm font-medium mb-2 text-[#d97706]">Nachricht</label>
                   <textarea
                     id="message"
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg bg-white/50 border border-[#1a4d2e]/20 text-[#1a4d2e] placeholder-[#1a4d2e]/50 focus:outline-none focus:ring-2 focus:ring-[#4f9a6f]"
+                    className="w-full px-4 py-3 rounded-lg bg-white/50 border border-[#d97706]/20 text-[#d97706] placeholder-[#d97706]/50 focus:outline-none focus:ring-2 focus:ring-[#f59e0b]"
                     placeholder="Ihre Nachricht an uns"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-[#1a4d2e] text-white rounded-lg font-semibold hover:bg-[#2a6d4e] transition-colors"
+                  className="w-full px-6 py-3 bg-[#d97706] text-white rounded-lg font-semibold hover:bg-[#b45309] transition-colors"
                 >
                   Nachricht senden
                 </button>
@@ -508,7 +508,7 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold mb-6 text-white">Kontaktinformationen</h3>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-[#1a4d2e] rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-[#d97706] rounded-lg flex items-center justify-center flex-shrink-0">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -547,8 +547,8 @@ export default function Home() {
               </div>
 
               <div className="bg-white/30 backdrop-blur-sm rounded-xl p-6">
-                <h4 className="font-semibold mb-3 text-[#1a4d2e]">Servicegebiet</h4>
-                <p className="text-[#1a4d2e]">
+                <h4 className="font-semibold mb-3 text-[#d97706]">Servicegebiet</h4>
+                <p className="text-[#d97706]">
                   Wir sind in Saarbrücken und im gesamten Saarland tätig. Rufen Sie uns an für ein kostenloses Angebot!
                 </p>
               </div>
@@ -558,7 +558,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#1a4d2e] text-white py-16 relative z-10">
+      <footer className="bg-[#d97706] text-white py-16 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             {/* Company Info */}
@@ -610,7 +610,7 @@ export default function Home() {
                 &copy; 2025 Der Ruppi macht's. Alle Rechte vorbehalten.
               </p>
               <p className="text-white/70 text-sm">
-                Gestaltet mit <span className="text-[#4f9a6f]">♥</span> in Deutschland
+                Gestaltet mit <span className="text-[#fbbf24]">♥</span> in Deutschland
               </p>
             </div>
           </div>
