@@ -9,28 +9,28 @@ export default function Home() {
 
   const projectDescriptions = [
     {
-      title: "Holzpergola & moderner Sitzbereich",
-      text: "Hier haben wir für Familie Becker einen modernen Rückzugsort geschaffen. Die alte Terrasse war ungenutzt und ohne Struktur – heute lädt die neue Holzpergola in Kombination mit einer klaren Pflastergestaltung zum Entspannen ein. Wir haben dafür robuste Douglasie verbaut und die Beete mit pflegeleichten Stauden ergänzt, sodass der Bereich das ganze Jahr über attraktiv bleibt."
+      title: "Wohnungsentrümpelung",
+      text: "Komplette Entrümpelung einer 3-Zimmer-Wohnung in Saarbrücken. Unser Team hat alle Möbel, Hausrat und Sperrmüll fachgerecht entsorgt. Die Wohnung wurde besenrein übergeben. Dank unserer effizienten Arbeitsweise war der Auftrag in nur einem Tag erledigt."
     },
     {
-      title: "Hangbefestigung & Staudenbepflanzung",
-      text: "Bei diesem Projekt haben wir einen schwierigen Hang in einen funktionalen und zugleich ästhetischen Gartenbereich verwandelt. Durch eine Natursteinmauer und neue Drainage konnten wir den Hang sichern. Anschließend haben wir eine abgestufte Staudenbepflanzung gesetzt, die nicht nur schön aussieht, sondern auch Erosion verhindert."
+      title: "Haushaltsauflösung",
+      text: "Bei diesem Projekt haben wir die komplette Auflösung eines Haushalts übernommen. Mit viel Einfühlungsvermögen und Diskretion haben wir alle Gegenstände sortiert, wertvolle Stücke identifiziert und den Rest fachgerecht entsorgt. Der Kunde war sehr zufrieden mit unserem respektvollen Umgang."
     },
     {
-      title: "Fundamentarbeiten für ein Gartenprojekt",
-      text: "Für Familie Schmitt durften wir die Grundarbeiten für ihr neues Gartenhaus übernehmen. Dazu gehörte das Ausheben, Verdichten und fachgerechte Setzen der Bodenplatte. Präzision ist hier entscheidend – eine saubere Grundlage sorgt dafür, dass alles, was darauf folgt, viele Jahre stabil bleibt."
+      title: "Kellerentrümpelung",
+      text: "Ein komplett vollgestellter Keller wurde von uns entrümpelt und gereinigt. Jahrzehntelange Ansammlungen wurden sortiert, Wertstoffe getrennt und alles ordnungsgemäß entsorgt. Der Keller ist nun wieder voll nutzbar."
     },
     {
-      title: "Großflächenmodellierung & moderne Gartenanlage",
-      text: "Dieses Grundstück haben wir komplett neu modelliert. Aus einer unebenen, schwer nutzbaren Fläche ist ein hochwertiger, pflegeleichter Garten entstanden. Wir haben Terrassen angelegt, verschiedene Höhen ausgeglichen und mit Zierkies, Formgehölzen und Rollrasen ein harmonisches Gesamtbild geschaffen."
+      title: "Umzugsservice",
+      text: "Professioneller Umzug einer Familie von Saarbrücken nach Völklingen. Unser Team hat alle Möbel sorgfältig verpackt, transportiert und in der neuen Wohnung aufgestellt. Pünktlich, freundlich und ohne Schäden – so wie es sein soll."
     },
     {
-      title: "Hochwertige Mauer- & Pflanzgestaltung",
-      text: "Hier wünschte sich der Kunde eine klare Struktur im Außenbereich. Wir haben eine elegante Blocksteinmauer gesetzt, die nicht nur optisch wirkt, sondern auch das Gelände abfängt. Dazu wurde eine kontrastreiche Bepflanzung aus Gräsern und roten Straucharten gewählt – modern, langlebig und sehr pflegeleicht."
+      title: "Betriebsauflösung",
+      text: "Komplette Auflösung eines Bürobetriebs mit Entsorgung aller Büromöbel, IT-Equipment und Akten. Wir haben uns um die fachgerechte Entsorgung aller Materialien gekümmert und die Räume besenrein übergeben."
     },
     {
-      title: "Vorgarten mit Formschnitt & Blütenfarben",
-      text: "Diesen Vorgarten haben wir komplett überarbeitet. Ziel war ein einladender, aber gleichzeitig pflegearmer Eingangsbereich. Wir kombinierten Formschnittgehölze mit blühenden Stauden und einer klar definierten Beetkante. Der Kunde freut sich besonders über die ganzjährige Struktur dank immergrüner Pflanzen."
+      title: "Dachbodenentrümpelung",
+      text: "Ein überfüllter Dachboden wurde von uns komplett geräumt. Alte Möbel, Kisten und Gerümpel wurden schnell und sauber entfernt. Der Kunde freute sich über die schnelle Abwicklung und faire Preisgestaltung."
     }
   ];
 
@@ -49,8 +49,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 md:h-20">
             <div className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-[#1a4d2e] to-[#4f9a6f] bg-clip-text text-transparent -ml-2 sm:-ml-4 lg:-ml-8">
-              <span className="hidden sm:inline">Garten- und Landschaftsbau Di Mulo Fabio</span>
-              <span className="sm:hidden">Di Mulo Fabio</span>
+              <span className="hidden sm:inline">Der Ruppi macht's</span>
+              <span className="sm:hidden">Der Ruppi macht's</span>
             </div>
             
             {/* Desktop Menu */}
@@ -132,11 +132,10 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white drop-shadow-2xl">
-            Garten- und Landschaftsbau<br />
-            <span className="bg-gradient-to-r from-[#1a4d2e] to-[#4f9a6f] bg-clip-text text-transparent">Di Mulo Fabio</span>
+            <span className="bg-gradient-to-r from-[#1a4d2e] to-[#4f9a6f] bg-clip-text text-transparent">Der Ruppi macht's</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-white/95 drop-shadow-lg">
-            Ihr Partner für professionelle Gartengestaltung und Landschaftspflege
+            Ihr zuverlässiger Partner für Entrümpelungen und Entsorgung in Saarbrücken
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
@@ -171,28 +170,28 @@ export default function Home() {
             <div>
               <h2 className="text-4xl font-bold text-[#1a4d2e] mb-6">Über uns</h2>
               <p className="text-lg text-white mb-6">
-                Mit jahrelanger Erfahrung im Garten- und Landschaftsbau steht Di Mulo Fabio für Qualität, 
-                Zuverlässigkeit und professionelle Arbeit. Unser Team verwandelt Ihre Gartenträume in die Realität.
+                Der Ruppi macht's ist Ihr professionelles Entsorgungsunternehmen in Saarbrücken und Umgebung. 
+                Wir sind spezialisiert auf Entrümpelungen jeder Art, Haushaltsauflösungen und Entsorgungsdienstleistungen.
               </p>
               <p className="text-lg text-white mb-6">
-                Von der ersten Planung bis zur finalen Umsetzung begleiten wir Sie durch jeden Schritt. 
-                Dabei legen wir besonderen Wert auf nachhaltige Lösungen und die Verwendung hochwertiger Materialien.
+                Unser erfahrenes Team arbeitet schnell, diskret und zuverlässig. Der Chef ist persönlich vor Ort 
+                und sorgt dafür, dass alle Aufträge pünktlich und zu fairen Preisen erledigt werden.
               </p>
               <div className="grid grid-cols-2 gap-6 mt-8">
                 <div className="text-center p-6 bg-white/80 rounded-xl">
-                  <div className="text-4xl font-bold text-[#1a4d2e] mb-2">15+</div>
-                  <div className="text-stone-grey">Jahre Erfahrung</div>
+                  <div className="text-4xl font-bold text-[#1a4d2e] mb-2">5.0</div>
+                  <div className="text-stone-grey">Google Bewertung</div>
                 </div>
                 <div className="text-center p-6 bg-white/80 rounded-xl">
-                  <div className="text-4xl font-bold text-[#1a4d2e] mb-2">500+</div>
-                  <div className="text-stone-grey">Projekte</div>
+                  <div className="text-4xl font-bold text-[#1a4d2e] mb-2">21</div>
+                  <div className="text-stone-grey">Rezensionen</div>
                 </div>
               </div>
             </div>
             <div className="relative h-96 lg:h-[500px] rounded-xl overflow-hidden shadow-2xl">
               <Image
                 src="/E1A77885-3015-488E-A863-7F08D039D190.jpeg"
-                alt="Garten- und Landschaftsbau Projekt"
+                alt="Der Ruppi macht's Entsorgung"
                 fill
                 className="object-cover"
                 style={{ objectPosition: 'center 40%' }}
@@ -209,7 +208,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">Unsere Leistungen</h2>
             <p className="text-lg text-white max-w-2xl mx-auto drop-shadow-lg">
-              Von der Planung bis zur Umsetzung – wir bieten Ihnen umfassende Dienstleistungen rund um Ihren Garten
+              Umfassende Dienstleistungen rund um Entrümpelung, Entsorgung und mehr
             </p>
           </div>
 
@@ -218,12 +217,12 @@ export default function Home() {
             <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
               <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Gartengestaltung</h3>
+              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Entrümpelungen</h3>
               <p className="text-[#6b7280]">
-                Individuelle Planung und Gestaltung Ihres Gartens nach Ihren Wünschen und Vorstellungen.
+                Wohnungs-, Haus-, Keller- und Dachbodenentrümpelungen – schnell, sauber und zuverlässig.
               </p>
             </div>
 
@@ -231,12 +230,12 @@ export default function Home() {
             <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
               <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Pflasterarbeiten</h3>
+              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Haushaltsauflösungen</h3>
               <p className="text-[#6b7280]">
-                Professionelle Verlegung von Pflastersteinen für Einfahrten, Wege und Terrassen.
+                Professionelle und diskrete Auflösung kompletter Haushalte mit fachgerechter Entsorgung.
               </p>
             </div>
 
@@ -244,12 +243,12 @@ export default function Home() {
             <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
               <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Baumpflege</h3>
+              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Betriebs- & Firmenauflösungen</h3>
               <p className="text-[#6b7280]">
-                Fachgerechter Baumschnitt und Baumpflege für gesunde und schöne Bäume.
+                Kompetente Abwicklung von Betriebs- und Firmenauflösungen aller Art.
               </p>
             </div>
 
@@ -257,12 +256,12 @@ export default function Home() {
             <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
               <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Rasenpflege</h3>
+              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Umzüge</h3>
               <p className="text-[#6b7280]">
-                Regelmäßige Pflege, Düngung und Neuanlage von Rasenflächen für einen grünen Garten.
+                Zuverlässige Umzugsdienstleistungen mit professionellem Team für einen stressfreien Umzug.
               </p>
             </div>
 
@@ -270,12 +269,12 @@ export default function Home() {
             <div className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-t-4 border-[#4f9a6f]">
               <div className="w-12 h-12 bg-[#1a4d2e] rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Zaunbau</h3>
+              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Transportvermietung</h3>
               <p className="text-[#6b7280]">
-                Montage und Installation von Zäunen aller Art für Sichtschutz und Sicherheit.
+                Transportvermietung mit erfahrenem Fahrer für alle Ihre Transportbedürfnisse.
               </p>
             </div>
 
@@ -286,9 +285,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Winterdienst</h3>
+              <h3 className="text-xl font-semibold text-[#1a4d2e] mb-3">Gebäudereinigung & Gartenarbeiten</h3>
               <p className="text-[#6b7280]">
-                Zuverlässiger Räum- und Streudienst für sichere Wege im Winter.
+                Professionelle Gebäudereinigung und Gartenarbeiten für ein gepflegtes Umfeld.
               </p>
             </div>
           </div>
@@ -366,13 +365,91 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Google Reviews Section */}
+      <section className="py-16 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">Was unsere Kunden sagen</h2>
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <div className="flex">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <svg key={star} className="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <span className="text-white text-2xl font-bold ml-2">5.0</span>
+            </div>
+            <p className="text-lg text-white drop-shadow-lg">
+              Basierend auf 21 Google-Rezensionen
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Review 1 */}
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+              <div className="flex mb-4">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <svg key={star} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-[#6b7280] mb-4 italic">
+                "Wir haben unseren Umzug in eine neue Wohnung sowie die Entrümpelung des vorherigen Hauses machen lassen. Sehr nette und zuvorkommende Mitarbeiter arbeiten mit ihrem ebenfalls sehr freundlichen und hilfsbereiten Chef Hand in Hand. Alle Termine wurden pünktlichst eingehalten. Dringende Weiterempfehlung! 👍👍👍"
+              </p>
+              <div className="border-t border-[#1a4d2e]/20 pt-4">
+                <p className="font-semibold text-[#1a4d2e]">Ellen Müller</p>
+                <p className="text-sm text-[#6b7280]">vor einem Monat</p>
+              </div>
+            </div>
+
+            {/* Review 2 */}
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+              <div className="flex mb-4">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <svg key={star} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-[#6b7280] mb-4 italic">
+                "Wir haben die Firma engagiert um unseren Keller zu entrümpeln. Der Chef persönlich sowie seine Kollegen waren sehr kompetent und der Auftrag wurde schnell erledigt. Sehr höfliche und freundliche Firma. TOP!"
+              </p>
+              <div className="border-t border-[#1a4d2e]/20 pt-4">
+                <p className="font-semibold text-[#1a4d2e]">Julia Stegen</p>
+                <p className="text-sm text-[#6b7280]">vor 5 Monaten</p>
+              </div>
+            </div>
+
+            {/* Review 3 */}
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+              <div className="flex mb-4">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <svg key={star} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-[#6b7280] mb-4 italic">
+                "Super diskret. Super schnelle Abwicklung. Und sehr sehr gute und saubere Arbeit, zu mehr als fairen Preisen. Alles in allem kann ich das Unternehmen nur weiterempfehlen."
+              </p>
+              <div className="border-t border-[#1a4d2e]/20 pt-4">
+                <p className="font-semibold text-[#1a4d2e]">Reiner Wahnsinn</p>
+                <p className="text-sm text-[#6b7280]">Local Guide · vor 5 Monaten</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="kontakt" className="py-12 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4 drop-shadow-lg">Kontakt aufnehmen</h2>
             <p className="text-lg text-white max-w-2xl mx-auto drop-shadow-lg">
-              Haben Sie Fragen oder wünschen Sie ein unverbindliches Angebot? Kontaktieren Sie uns!
+              Haben Sie Fragen oder benötigen Sie eine Entrümpelung? Kontaktieren Sie uns!
             </p>
           </div>
 
@@ -439,7 +516,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="font-medium text-white">Adresse</p>
-                      <p className="text-white/80">Ihre Straße 123<br />12345 Stadt</p>
+                      <p className="text-white/80">Oberstraße 41<br />66125 Saarbrücken<br />Deutschland</p>
                     </div>
                   </div>
 
@@ -451,19 +528,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="font-medium text-white">Telefon</p>
-                      <p className="text-white/80">+49 123 456789</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="w-10 h-10 bg-[#1a4d2e] rounded-lg flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-medium text-white">E-Mail</p>
-                      <p className="text-white/80">info@dimulo-gartenbau.de</p>
+                      <p className="text-white/80">0160 3474685</p>
                     </div>
                   </div>
 
@@ -475,7 +540,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="font-medium text-white">Öffnungszeiten</p>
-                      <p className="text-white/80">Mo-Fr: 7:00 - 18:00 Uhr<br />Sa: 8:00 - 14:00 Uhr</p>
+                      <p className="text-white/80">Di-Sa: 08:00 - 18:00 Uhr</p>
                     </div>
                   </div>
                 </div>
@@ -484,7 +549,7 @@ export default function Home() {
               <div className="bg-white/30 backdrop-blur-sm rounded-xl p-6">
                 <h4 className="font-semibold mb-3 text-[#1a4d2e]">Servicegebiet</h4>
                 <p className="text-[#1a4d2e]">
-                  Wir sind in der gesamten Region tätig und bieten unsere Dienstleistungen im Umkreis von 50 km an.
+                  Wir sind in Saarbrücken und im gesamten Saarland tätig. Rufen Sie uns an für ein kostenloses Angebot!
                 </p>
               </div>
             </div>
@@ -498,9 +563,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             {/* Company Info */}
             <div className="md:col-span-2">
-              <h3 className="text-2xl font-bold text-white mb-4">Garten- und Landschaftsbau<br />Di Mulo Fabio</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Der Ruppi macht's</h3>
               <p className="text-white/80 mb-6 leading-relaxed">
-                Ihr zuverlässiger Partner für professionelle Gartengestaltung und Landschaftspflege in der Region.
+                Ihr zuverlässiger Partner für Entrümpelungen, Haushaltsauflösungen und Entsorgung in Saarbrücken und Umgebung.
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-colors">
@@ -542,7 +607,7 @@ export default function Home() {
           <div className="border-t border-white/20 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <p className="text-white/70 text-sm">
-                &copy; 2025 Garten- und Landschaftsbau Di Mulo Fabio. Alle Rechte vorbehalten.
+                &copy; 2025 Der Ruppi macht's. Alle Rechte vorbehalten.
               </p>
               <p className="text-white/70 text-sm">
                 Gestaltet mit <span className="text-[#4f9a6f]">♥</span> in Deutschland

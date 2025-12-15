@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Garten- und Landschaftsbau Di Mulo Fabio",
-  description: "Professioneller Garten- und Landschaftsbau. Gartengestaltung, Pflasterarbeiten, Baumpflege und mehr.",
+  title: "Der Ruppi macht's - Entrümpelungen & Entsorgung Saarbrücken",
+  description: "Professionelle Entrümpelungen, Haushaltsauflösungen und Entsorgung in Saarbrücken. Schnell, diskret und zu fairen Preisen. ⭐ 5.0 Sterne auf Google.",
 };
 
 export default function RootLayout({
