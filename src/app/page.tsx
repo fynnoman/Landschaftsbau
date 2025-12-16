@@ -115,7 +115,7 @@ export default function Home() {
       {/* Fixed Background Image for entire page */}
       <div className="fixed inset-0 z-0">
         <Image
-          src="/hhin.jpeg"
+          src="/9396EFE7-2A37-4D9A-9841-FC71B5E6EE09.png"
           alt="Der Ruppi macht's Hintergrund"
           fill
           className="object-cover"
@@ -387,56 +387,56 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Review 1 */}
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="flex mb-4">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow flex flex-col">
+              <div className="flex justify-center mb-4">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <svg key={star} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
               </div>
-              <p className="text-[#6b7280] mb-4 italic">
+              <p className="text-[#6b7280] mb-6 italic text-center leading-relaxed flex-grow">
                 "Wir haben unseren Umzug in eine neue Wohnung sowie die Entrümpelung des vorherigen Hauses machen lassen. Sehr nette und zuvorkommende Mitarbeiter arbeiten mit ihrem ebenfalls sehr freundlichen und hilfsbereiten Chef Hand in Hand. Alle Termine wurden pünktlichst eingehalten. Dringende Weiterempfehlung! 👍👍👍"
               </p>
-              <div className="border-t border-[#d97706]/20 pt-4">
-                <p className="font-semibold text-[#d97706]">Ellen Müller</p>
-                <p className="text-sm text-[#6b7280]">vor einem Monat</p>
+              <div className="border-t border-[#d97706]/20 pt-4 text-center">
+                <p className="font-semibold text-[#d97706] text-lg">Ellen Müller</p>
+                <p className="text-sm text-[#6b7280] mt-1">vor einem Monat</p>
               </div>
             </div>
 
             {/* Review 2 */}
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="flex mb-4">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow flex flex-col">
+              <div className="flex justify-center mb-4">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <svg key={star} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
               </div>
-              <p className="text-[#6b7280] mb-4 italic">
+              <p className="text-[#6b7280] mb-6 italic text-center leading-relaxed flex-grow">
                 "Wir haben die Firma engagiert um unseren Keller zu entrümpeln. Der Chef persönlich sowie seine Kollegen waren sehr kompetent und der Auftrag wurde schnell erledigt. Sehr höfliche und freundliche Firma. TOP!"
               </p>
-              <div className="border-t border-[#d97706]/20 pt-4">
-                <p className="font-semibold text-[#d97706]">Julia Stegen</p>
-                <p className="text-sm text-[#6b7280]">vor 5 Monaten</p>
+              <div className="border-t border-[#d97706]/20 pt-4 text-center">
+                <p className="font-semibold text-[#d97706] text-lg">Julia Stegen</p>
+                <p className="text-sm text-[#6b7280] mt-1">vor 5 Monaten</p>
               </div>
             </div>
 
             {/* Review 3 */}
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="flex mb-4">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow flex flex-col">
+              <div className="flex justify-center mb-4">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <svg key={star} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
                 ))}
               </div>
-              <p className="text-[#6b7280] mb-4 italic">
+              <p className="text-[#6b7280] mb-6 italic text-center leading-relaxed flex-grow">
                 "Super diskret. Super schnelle Abwicklung. Und sehr sehr gute und saubere Arbeit, zu mehr als fairen Preisen. Alles in allem kann ich das Unternehmen nur weiterempfehlen."
               </p>
-              <div className="border-t border-[#d97706]/20 pt-4">
-                <p className="font-semibold text-[#d97706]">Reiner Wahnsinn</p>
-                <p className="text-sm text-[#6b7280]">Local Guide · vor 5 Monaten</p>
+              <div className="border-t border-[#d97706]/20 pt-4 text-center">
+                <p className="font-semibold text-[#d97706] text-lg">Reiner Wahnsinn</p>
+                <p className="text-sm text-[#6b7280] mt-1">Local Guide · vor 5 Monaten</p>
               </div>
             </div>
           </div>
